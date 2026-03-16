@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Himalayan Trekking</title>
+        
+        <style>
+            body{
+                background-color: aliceblue;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .box{
+                border: 2px solid;
+                background-color: whitesmoke;
+                margin: 20px;
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            img{
+                width: 250px;
+                margin-top: 10px;
+                border-radius: 8px;
+            }
+
+            button{
+                padding: 8px 15px;
+                margin-top: 10px;
+                background-color: aqua;
+                color:white;
+                border:none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: burlywood
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <h2 id="t1">Welcome to Himalayan Trekking</h2>
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="mountains">
+            <br>
+            <button onclick="document.getElementById('t1').innerHTML='Explore the Himalayas!'">
+            Change Title
+        </button>
+        </div>
+
+
+        <div class="box">
+            <h2 id="t2">Everest Base Camp Trek</h2>
+            <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b" alt="Everest Trek">
+            <br>
+            <button onclick="document.getElementById('t2').style.color='green'">
+            Highlight Trek
+            </button>
+            </div>
+
+
+        <div class="box">
+            <h2 id="t3">Beautiful Mountain Views</h2>
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Mountain View">
+            <br>
+            <button onclick="document.getElementById('t3').style.display='none'">
+            Hide Text
+        </button>
+        </div>
+            
+        <div class="box">
+            <h2 id="t4" style="display:none">Annapurna Circuit</h2>
+            <br>
+            <button onclick="document.getElementById('t4').style.display='block'">
+            Show Trek
+        </button>
+        </div>
+            
+
+        <div class="box" id="box5">
+            <h2>Fresh Mountain Air</h2>
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Nature">
+            <br>
+            <button onclick="document.getElementById('box5').style.backgroundColor='#d1f2eb'">
+            Change Background
+        </button>
+        </div>
+            
+        
+        <div class="box">
+            <h2 id="t6">Healthy Adventure</h2>
+            <button onclick="document.getElementById('t6').style.fontSize='35px'">
+            Increase Text Size
+        </button>
+        </div>
+
+
+        <div class="box">
+            <h2>Why Trek?</h2>
+            <button onclick="alert('Trekking keeps you healthy and happy!')">
+            Show Message
+        </button>
+        </div>
+            
+            <div class="box">
+            <h2 id="t8">Mountain Sunrise</h2>
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" alt="Sunrise">
+            <br>
+            <button onclick="document.getElementById('t8').style.fontStyle='italic'">
+            Make Italic
+        </button>
+        </div>
+
+
+        <div class="box">
+            <h2 id="t9">Respect Nature</h2>
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Nature">
+            <br>
+            <button onclick="document.getElementById('t9').style.color='purple'">
+            Change Color
+        </button>
+        </div>
+            
+            
+        <div class="box">
+            <h2 id="t10">Plan Your Next Trek</h2>
+            <button onclick="document.getElementById('t10').innerHTML='Adventure Awaits!'">
+            Update Text
+        </button>
+        </div>
+            
+            
+    </body>
+</html>
