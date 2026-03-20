@@ -1,0 +1,31 @@
+<!-- Create a program that:
+1.Take two numbers from input fields.
+2.Have 4 buttons (Add, Subtract, Multiply, Divide)
+3.Clicking on Add should add two numbers and show the result.
+4.Clicking on Subtract should subtract it and same goes for multiply and divide.
+5. You need to use if else (control statements) for this.]-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <br>
+    <buttons onclick="calculate('+')">+</buttons>
+    <buttons onclick="calculate('-')">-</buttons>
+    <buttons onclick="calculate('*')">*</buttons>
+    <buttons onclick="calculate('/')">/</buttons>
+    
+
+    <h3 id="result"></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
