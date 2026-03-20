@@ -5,7 +5,7 @@ function calculate(operator) {
     let result;
 
     if (operator == "+") {
-        result = num1 +num2;
+        result = num1 + num2;
     }
     else if (operator == "-") {
         result = num1 - num2;
@@ -15,16 +15,15 @@ function calculate(operator) {
     }
     else if (operator == "/") {
         if (num2 === 0) {
-            document.getElementById("result").innerText = "Cannot divide by zero"
+            document.getElementById("result").innerText = "Cannot divide by zero";
             return;
         } else {
             result = num1 / num2;
         }
-
     }
     else {
         result = "Invalid operator";
     }
 
-    document.getElementById("result").innerHTML = "Result: " + result;
+    document.getElementById("result").innerText = "Result: " + result;
 }

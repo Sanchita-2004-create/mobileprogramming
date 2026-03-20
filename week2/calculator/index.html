@@ -11,21 +11,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+            width: 200px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 12px;
+            border: 1px solid black;
+            background: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f0f0f0;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
+
     <h2>Calculator</h2>
-    <input type="number" id="num1" placeholder="Enter first number">
-    <input type="number" id="num2" placeholder="Enter second number">
 
-    <br>
-    <buttons onclick="calculate('+')">+</buttons>
-    <buttons onclick="calculate('-')">-</buttons>
-    <buttons onclick="calculate('*')">*</buttons>
-    <buttons onclick="calculate('/')">/</buttons>
-    
+    <input type="number" id="num1" placeholder="Number 1">
+    <input type="number" id="num2" placeholder="Number 2">
 
-    <h3 id="result"></h3>
+    <div class="buttons">
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">−</button>
+        <button onclick="calculate('*')">×</button>
+        <button onclick="calculate('/')">÷</button>
+    </div>
+
+    <h3 id="result">Result:</h3>
 
     <script src="script.js"></script>
+
 </body>
 </html>
