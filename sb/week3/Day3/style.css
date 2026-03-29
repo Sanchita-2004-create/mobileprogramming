@@ -1,0 +1,37 @@
+#profile-card {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    transition: all 0.5s;
+}
+
+.highlighted {
+    border: 5px solid #f39c12;
+    background-color: #ffec99;
+    transform: scale(1.05);
+}
+
+.dark-mode {
+    background: #333;
+    color: white;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+#output {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+}

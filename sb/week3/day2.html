@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+
+    // Top Left → Bottom Left
+    div.css("background-color", "red");
+    div.animate({
+      top: '350px',
+      height: '150px',
+      width: '120px',
+      opacity: 0.5
+    }, "slow");
+
+    // Bottom Left → Bottom Right
+    div.css("background-color", "blue");
+    div.animate({
+      left: '350px',
+      height: '200px',
+      width: '150px',
+      opacity: 0.7
+    }, "slow");
+
+    // Bottom Right → Top Right
+    div.css("background-color", "green");
+    div.animate({
+      top: '100px',
+      height: '130px',
+      width: '130px',
+      opacity: 0.4
+    }, "slow");
+
+    // Top Right → Top Left
+    div.css("background-color", "orange");
+    div.animate({
+      left: '0px',
+      height: '100px',
+      width: '100px',
+      opacity: 1
+    }, "slow");
+
+  });
+});
+</script> 
+
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<p>Color changes before reaching each corner</p>
+
+<div style="
+  background:#b2e80f;
+  height:100px;
+  width:100px;
+  position:absolute;
+  top:100px;
+  left:0;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+">
+</div>
+
+</body>
+</html>
